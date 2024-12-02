@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Day1 {
+public class DayOne {
     public static int listLength = 4;
 
 
     public static void main(String[] args) throws IOException {
 
-        Path path = Path.of("C:\\Users\\Cal\\Documents\\GitHub\\AdventOfCode2025\\input.txt");
+        Path path = Path.of("C:\\Users\\Cal\\Documents\\GitHub\\AdventOfCode2025\\DayOne.txt");
         List<String> file = Files.readAllLines(path);
 
         //solutionOne(file);
