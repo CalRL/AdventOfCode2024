@@ -19,7 +19,7 @@ public class DayThree {
         solutionTwo(cs);
     }
 
-    public static List<String> convertToList(CharSequence input, Pattern pattern) {
+    private static List<String> convertToList(CharSequence input, Pattern pattern) {
         List<String> listOfStrings = new ArrayList<>();
         //Pattern pattern = Pattern.compile("(mul\\(\\d{1,3},\\d{1,3}\\))");
         Matcher matcher = pattern.matcher(input);
@@ -32,7 +32,7 @@ public class DayThree {
         return listOfStrings;
     }
 
-    public static void solutionOne(CharSequence input) {
+    private static void solutionOne(CharSequence input) {
         int sum = 0;
         Pattern pattern = Pattern.compile("(mul\\(\\d{1,3},\\d{1,3}\\))");
         List<String> listOfStrings = convertToList(input, pattern);
@@ -51,7 +51,7 @@ public class DayThree {
         System.out.println(sum);
     }
 
-    public static void solutionTwo(CharSequence input) {
+    private static void solutionTwo(CharSequence input) {
         Pattern pattern = Pattern.compile("(do\\(\\))|(mul\\(\\d{1,3},\\d{1,3}\\))|(don't\\(\\))");
         List<String> listOfStrings = convertToList(input, pattern);
         int sum = 0;

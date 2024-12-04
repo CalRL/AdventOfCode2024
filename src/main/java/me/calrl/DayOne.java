@@ -21,7 +21,7 @@ public class DayOne {
     }
 
 
-    public static void solutionOne(List<String> input) {
+    private static void solutionOne(List<String> input) {
         List<List<Integer>> listOfLists = splitLists(input);
         List<Integer> leftList = listOfLists.get(0);
         List<Integer> rightList = listOfLists.get(1);
@@ -37,7 +37,7 @@ public class DayOne {
 
     }
 
-    public static void solutionTwo(List<String> input) {
+    private static void solutionTwo(List<String> input) {
         List<List<Integer>> listOfLists = splitLists(input);
         List<Integer> leftList = listOfLists.get(0);
         List<Integer> rightList = listOfLists.get(1);
@@ -50,7 +50,7 @@ public class DayOne {
         System.out.println(sum);
     }
 
-    public static List<List<Integer>> splitLists(List<String> input) {
+    private static List<List<Integer>> splitLists(List<String> input) {
         List<Integer> leftList = new ArrayList<>();
         List<Integer> rightList = new ArrayList<>();
         for(int i = 0; i < input.size(); i++) {
